@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krupal Tisgaonkar's Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel=stylesheet>
+    <script src = "assets/js/fancy.js" defer></script>
+    <link rel="shortcut icon" href="assets/images/nobodycares.jpg" type="image/x-icon">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "Lepg-1q4LfwZjC54w",
+        });
+    })();
+    </script>
+</head>
+<body>
+    <div id = "navbar">
+        <ul>
+            <li onclick = "window.location.href = '#'">Home</li>
+            <li onclick = "window.location.href = '#about'">About</li>
+            <li onclick = "window.location.href = '#my-projects'">My Projects</li>
+            <li onclick = "window.location.href = '#contact'">Contact</li>
+        </ul>
+    </div>
+    <canvas id = "Matrix"></canvas>
+    <header>
+        <div>
+            <div class = "center">
+                HI, I AM <br><span id = "first-stuff">KRUPAL TISGAONKAR.</span><br> I am a <span id = "typing-effect-features"></span><span id = "input-cursor">|</span><br><br>
+                <div id="second-part">Explore who I am, by Scrolling <strong>↓</strong></div>
+            </div>
+        </div>
+    </header>
+    <div id = "about">
+        <div class="center">
+            <div class="right">
+                <img src="assets/images/nobodycares.jpg" onclick = ""class = "card"width = "30%"alt="a picture of me">
+            </div>
+            <div class="left card" onclick = "">
+                <div>
+                Hello! I am Krupal Tisgaonkar, a middle schooler in Marshall Middle School, San Diego, CA. I am enthusiastic about computers and love coding. I am mainly experienced in frontend development like coding in JS, CSS, and HTML. I am not a pro, but am continuing to further progress my knowledge by creating more web applications like this. When I am out of the coding world, I am usually doing homework or playing soccer. However, I am also interested in microbiology, and the world that we cannot see.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "my-projects">
+        <div class="center">
+            <div class = "table">
+                <div class="cell">
+                    <div class = "container card" onclick="window.location.href = '//evadespacepirates.netlify.app'">
+                        <div class = "image">
+                            <img src="assets/images/space_invaders_logo.png" alt=" logog">
+                        </div>
+                        <div class = "context">
+                            My very first project I deployed was a remake of Space Invaders. I made this without using the canvas feature.
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class = "container card" onclick="window.location.href = '//github.com/krupaltisgaonkar/pytorch-yolo'">
+                        <div class = "image">
+                            <img src="assets/images/yolo-ouput.jpg" alt=" logog">
+                        </div>
+                        <div class = "context">
+                            For FLL (First Lego League), I had to train an AI to recognize fish. I used Google Colab, and I trained it on yolo
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class = "container card" onclick="window.location.href = '//github.com/krupaltisgaonkar/pytorch-faster_rcnn'">
+                        <div class = "image">
+                            <img src="assets/images/faster-rcnn-output.jpg" alt=" logog">
+                        </div>
+                        <div class = "context">
+                            For FLL (First Lego League), I had to train an AI to recognize fish. I used Google Colab, and I trained it on faster rcnn, as an alternate way to see if it was more accurate.
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class = "container card" onclick="window.location.href = '//mathactivities.github.io'">
+                        <div class = "image">
+                            <img src="assets/images/mathlogo.png" alt=" logog">
+                        </div>
+                        <div class = "context">
+                            I noticed my friends not having fun, so I created a website for gaming and which also saves your progress. You have to log in with an account that has "@stu" to sign in. In the footer, click below the "Contact" button, and you will see.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="center">
+            <span id = "green"></span>
+            <span id = "red"></span>
+            If you have any questions, or want to talk to me:
+            <input type="text" onclick="" id="name" placeholder="Ur name"> 
+            <input type="text" onclick="" id="email" placeholder="Ur email">
+            <textarea onclick="" id="message" placeholder="some message"></textarea>
+            <button onclick = "" id = "send-mail">Send</button>
+        </div>
+    </div>
+</body>
+</html>
